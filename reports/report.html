@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">report.html</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">report.html</h1>
+    <p>Report generated on 26-Feb-2025 at 15:31:52 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">2 tests took 00:01:53.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
+            <span class="failed">1 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">1 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.13.2&#34;, &#34;Platform&#34;: &#34;Windows-11-10.0.26100-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.4&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;base-url&#34;: &#34;2.1.0&#34;, &#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;playwright&#34;: &#34;0.7.0&#34;}, &#34;CI&#34;: &#34;true&#34;, &#34;BUILD_NUMBER&#34;: &#34;6&#34;, &#34;BUILD_ID&#34;: &#34;6&#34;, &#34;BUILD_URL&#34;: &#34;http://localhost:8080/job/pflegebund/6/&#34;, &#34;NODE_NAME&#34;: &#34;built-in&#34;, &#34;JOB_NAME&#34;: &#34;pflegebund&#34;, &#34;BUILD_TAG&#34;: &#34;jenkins-pflegebund-6&#34;, &#34;EXECUTOR_NUMBER&#34;: &#34;0&#34;, &#34;JENKINS_URL&#34;: &#34;http://localhost:8080/&#34;, &#34;WORKSPACE&#34;: &#34;C:\\Users\\soumy\\OneDrive\\Documents\\pflegebund&#34;, &#34;Base URL&#34;: &#34;&#34;}, &#34;tests&#34;: {&#34;test_compareOffer.py::test_compareOffer[e2e_data0]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_compareOffer.py::test_compareOffer[e2e_data0]&#34;, &#34;duration&#34;: &#34;00:01:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_compareOffer.py::test_compareOffer[e2e_data0]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;playwright = &amp;lt;playwright._impl._playwright.Playwright object at 0x0000020ACDA1DE80&amp;gt;\ne2e_data = {&amp;#x27;additionalPersonOption&amp;#x27;: &amp;#x27; Ja &amp;#x27;, &amp;#x27;caregiverDriveOption&amp;#x27;: &amp;#x27; Ja &amp;#x27;, &amp;#x27;contactInformationEmail&amp;#x27;: &amp;#x27;soumybasu@gmail.com&amp;#x27;, &amp;#x27;contactInformationName&amp;#x27;: &amp;#x27;Soumyajit Basu&amp;#x27;, ...}\n\n    @pytest.mark.parametrize(&amp;#x27;e2e_data&amp;#x27;, e2e_data_list)\n    def test_compareOffer(playwright: Playwright, e2e_data):\n        browser = playwright.chromium.launch(headless=False)\n        context = browser.new_context()\n        page = context.new_page()\n    \n    \n        #Getting the data from the json file\n        noOfPerson = e2e_data[&amp;quot;noOfPerson&amp;quot;]\n        verificationAdditionalPerson = e2e_data[&amp;quot;verificationAdditionalPerson&amp;quot;]\n        additionalPersonOption = e2e_data[&amp;quot;additionalPersonOption&amp;quot;]\n        verificationMobilePage = e2e_data[&amp;quot;verificationMobilePage&amp;quot;]\n        mobilePageOption = e2e_data[&amp;quot;mobilePageOption&amp;quot;]\n        verificationNightShift = e2e_data[&amp;quot;verificationNightShift&amp;quot;]\n        nightShiftOption = e2e_data[&amp;quot;nightShiftOption&amp;quot;]\n        verificationCaregiverDrive = e2e_data[&amp;quot;verificationCaregiverDrive&amp;quot;]\n        caregiverDriveOption = e2e_data[&amp;quot;caregiverDriveOption&amp;quot;]\n        verificationGermanProficiency = e2e_data[&amp;quot;verificationGermanProficiency&amp;quot;]\n        germanProficiencyOption = e2e_data[&amp;quot;germanProficiencyOption&amp;quot;]\n        verificationNursingStaffGender = e2e_data[&amp;quot;verificationNursingStaffGender&amp;quot;]\n        nursingStaffGenderOption = e2e_data[&amp;quot;nursingStaffGenderOption&amp;quot;]\n        verificationWhenCareNeeded = e2e_data[&amp;quot;verificationWhenCareNeeded&amp;quot;]\n        whenCareNeededOption = e2e_data[&amp;quot;whenCareNeededOption&amp;quot;]\n        verificationWhereCareNeeded = e2e_data[&amp;quot;verificationWhereCareNeeded&amp;quot;]\n        whereCareNeededPlace = e2e_data[&amp;quot;whereCareNeededPlace&amp;quot;]\n        verificationContactInformation = e2e_data[&amp;quot;verificationContactInformation&amp;quot;]\n        contactInformationName = e2e_data[&amp;quot;contactInformationName&amp;quot;]\n        contactInformationEmail = e2e_data[&amp;quot;contactInformationEmail&amp;quot;]\n        contactInformationNumber = e2e_data[&amp;quot;contactInformationNumber&amp;quot;]\n    \n        compareOffer = CompareOffer(page)\n        compareOffer.navigate()\n&amp;gt;       compareOffer.e2eFlow(noOfPerson, verificationAdditionalPerson, additionalPersonOption, verificationMobilePage, mobilePageOption, verificationNightShift, nightShiftOption, verificationCaregiverDrive, caregiverDriveOption, verificationGermanProficiency, germanProficiencyOption, verificationNursingStaffGender, nursingStaffGenderOption, verificationWhenCareNeeded, whenCareNeededOption, verificationWhereCareNeeded, whereCareNeededPlace, verificationContactInformation, contactInformationName, contactInformationEmail, contactInformationNumber)\n\ntest_compareOffer.py:46: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;pageObjects.compareOffer.CompareOffer object at 0x0000020ACDA1FA10&amp;gt;\nnoOfPerson = &amp;#x27;1 person&amp;#x27;\nverificationAdditionalPerson = &amp;#x27;Befindet sich eine zus\u00c3\u00a4tzliche Person (ohne Pflegebedarf) mit im Haushalt?&amp;#x27;\nadditionalPersonOption = &amp;#x27; Ja &amp;#x27;\nverificationMobilePage = &amp;#x27;Wie mobil ist die zu pflegende Person?&amp;#x27;\nmobilePageOption = &amp;#x27; Mobil &amp;#x27;\nverificationNightShift = &amp;#x27;Sind Nachteins\u00c3\u00a4tze n\u00c3\u00b6tig?&amp;#x27;\nnightShiftOption = &amp;#x27; Keine &amp;#x27;\nverificationCaregiverDrive = &amp;#x27;Muss die Pflegekraft Auto fahren?&amp;#x27;\ncaregiverDriveOption = &amp;#x27; Ja &amp;#x27;\nverificationGermanProficiency = &amp;#x27;Welche Deutschkenntnisse w\u00c3\u00bcnschen Sie?&amp;#x27;\ngermanProficiencyOption = &amp;#x27; Fortgeschritten &amp;#x27;\nverificationNursingStaffGender = &amp;#x27;W\u00c3\u00bcnschen Sie eine weibliche oder m\u00c3\u00a4nnliche Pflegehilfe?&amp;#x27;\nnursingStaffGenderOption = &amp;#x27; Weiblich &amp;#x27;\nverificationWhenCareNeeded = &amp;#x27;Wann wird die Betreuung ben\u00c3\u00b6tigt?&amp;#x27;\nwhenCareNeededOption = &amp;#x27; Noch unklar &amp;#x27;\nverificationWhereCareNeeded = &amp;#x27;Wo wird die Betreuung ben\u00c3\u00b6tigt?&amp;#x27;\nwhereCareNeededPlace = &amp;#x27;Berlin&amp;#x27;\nverificationContactInformation = &amp;#x27;Wer soll unser Ansprechpartner f\u00c3\u00bcr die Angebote sein?&amp;#x27;\ncontactInformationName = &amp;#x27;Soumyajit Basu&amp;#x27;\ncontactInformationEmail = &amp;#x27;soumybasu@gmail.com&amp;#x27;\ncontactInformationNumber = &amp;#x27;9874367907&amp;#x27;\n\n    def e2eFlow(self, noOfPerson, verificationAdditionalPerson, additionalPersonOption, verificationMobilePage, mobilePageOption, verificationNightShift, nightShiftOption, verificationCaregiverDrive, caregiverDriveOption, verificationGermanProficiency, germanProficiencyOption, verificationNursingStaffGender, nursingStaffGenderOption, verificationWhenCareNeeded, whenCareNeededOption, verificationWhereCareNeeded, whereCareNeededPlace, verificationContactInformation, contactInformationName, contactInformationEmail, contactInformationNumber ):\n        self.page.get_by_text(noOfPerson).click()\n        print(verificationAdditionalPerson)\n        time.sleep(3)\n        expect(self.page.locator(&amp;quot;body&amp;quot;)).to_contain_text(&amp;quot;Befindet sich eine zus\u00e4tzliche Person (ohne Pflegebedarf) mit im Haushalt?&amp;quot;)\n    \n        # Clicking on the yes button.\n        self.page.get_by_role(&amp;quot;button&amp;quot;, name=additionalPersonOption).click()\n        time.sleep(3)\n        expect(self.page.locator(&amp;quot;body&amp;quot;)).to_contain_text(&amp;quot;Wie mobil ist die zu pflegende Person?&amp;quot;)\n    \n    \n        # clicking the mobile option\n        self.page.get_by_role(&amp;quot;button&amp;quot;, name=mobilePageOption).click()\n        time.sleep(3)\n        expect(self.page.locator(&amp;quot;body&amp;quot;)).to_contain_text(&amp;quot;Sind Nachteins\u00e4tze n\u00f6tig?&amp;quot;)\n    \n    \n        # clicking the No option on Are Night Shift Necessary page\n        self.page.get_by_role(&amp;quot;button&amp;quot;, name=nightShiftOption).click()\n        time.sleep(3)\n        expect(self.page.locator(&amp;quot;body&amp;quot;)).to_contain_text(&amp;quot;Muss die Pflegekraft Auto fahren?&amp;quot;)\n    \n    \n        # Clicking on the Yes button on the Does Care Giver have to Drive page\n        self.page.get_by_role(&amp;quot;button&amp;quot;, name=caregiverDriveOption).click()\n        time.sleep(3)\n        expect(self.page.locator(&amp;quot;body&amp;quot;)).to_contain_text(&amp;quot;Welche Deutschkenntnisse w\u00fcnschen Sie?&amp;quot;)\n    \n    \n        # clicking on Advanced button on What level of German do you want page\n        self.page.get_by_role(&amp;quot;button&amp;quot;, name=germanProficiencyOption).click()\n        time.sleep(3)\n        expect(self.page.locator(&amp;quot;body&amp;quot;)).to_contain_text(&amp;quot;W\u00fcnschen Sie eine weibliche oder m\u00e4nnliche Pflegehilfe?&amp;quot;)\n    \n        # Choosing Female on Do you want male / female nurshing staff\n        self.page.get_by_role(&amp;quot;button&amp;quot;, name=nursingStaffGenderOption).click()\n        time.sleep(3)\n        expect(self.page.locator(&amp;quot;body&amp;quot;)).to_contain_text(&amp;quot;Wann wird die Betreuung ben\u00f6tigt?&amp;quot;)\n    \n    \n        # Choosing Still unclear on When is care needed page\n        self.page.get_by_role(&amp;quot;button&amp;quot;, name=whenCareNeededOption).click()\n        time.sleep(3)\n        expect(self.page.locator(&amp;quot;body&amp;quot;)).to_contain_text(&amp;quot;Wo wird die Betreuung ben\u00f6tigt?&amp;quot;)\n    \n    \n        # Entering value where is care needed page\n        self.page.locator(&amp;quot;#city&amp;quot;).fill(whereCareNeededPlace)\n        self.page.get_by_role(&amp;quot;button&amp;quot;, name=&amp;quot;Weiter&amp;quot;).click()\n        time.sleep(3)\n        expect(self.page.locator(&amp;quot;body&amp;quot;)).to_contain_text(&amp;quot;Wer soll unser Ansprechpartner f\u00fcr die Angebote sein?&amp;quot;)\n    \n        # Entering name, email and phone number in the last page and completing the flow\n        self.page.get_by_placeholder(&amp;quot;Ihr vollst\u00e4ndiger Name&amp;quot;).fill(contactInformationName)\n        self.page.get_by_placeholder(&amp;quot;E-Mail&amp;quot;).fill(contactInformationEmail)\n        self.page.get_by_placeholder(&amp;quot;Ihre Telefonnummer&amp;quot;).fill(contactInformationNumber)\n        self.page.get_by_role(&amp;quot;checkbox&amp;quot;).check()\n        self.page.get_by_role(&amp;quot;button&amp;quot;, name=&amp;quot;Jetzt Angebote vergleichen&amp;quot;).click()\n&amp;gt;       expect(self.page.locator(&amp;quot;body&amp;quot;)).to_contain_text(&amp;quot; Vielen Dank f\u00fcr Ihre Anfrage! &amp;quot;)\nE       AssertionError: Locator expected to contain text &amp;#x27; Vielen Dank f\u00fcr Ihre Anfrage! &amp;#x27;\nE       Actual value: \nE           \t\t\nE       \t\t\nE       \t\t\nE       \t    \nE           \nE             \nE       \nE       \nE         \nE           \nE             \nE               \nE                 \nE               \nE       \nE               \nE                 \nE                 \nE                   Brauchen Sie Hilfe?\nE                   Ilka Wysocki\nE                   \nE                     \nE                     \nE                       040 - 180 240 916\nE                                   \nE                   \nE                 \nE                 \nE                   \nE                   \nE                     040 - 180 240 916\nE                   \nE                 \nE       \nE               \nE       \nE       \nE             \nE           \nE         \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE         \nE           \nE         \nE       \nE         \nE           \nE             \nE           \nE         \nE       \nE       \nE           \nE             \nE               \nE                 \nE                   \nE                 \nE                  Mit uns finden Sie die besten Anbieter der \u201c24-Stunden-Pflege\u201d\nE                 \nE               \nE       \nE               \nE       \nE               \nE               \nE       \nE               \nE                 \nE                   Wie viele Personen sind zu betreuen?  \nE                 \nE       \nE                   \nE                     \nE                      1 Person \nE                   \nE       \nE                   \nE                     \nE                      2 Personen \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE       \nE               \nE       \nE       \nE               \nE               \nE                 \nE                   Befindet sich eine zus\u00e4tzliche Person (ohne Pflegebedarf) mit im Haushalt? \nE                 \nE       \nE                   \nE                     \nE                      Nein \nE                   \nE       \nE                   \nE                     \nE                      Ja \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE                 \nE                   Wie mobil ist die zu pflegende Person?    Person 1 Mobilit\u00e4t\nE                 \nE       \nE                   \nE                     \nE                      Mobil \nE                   \nE       \nE                   \nE                     \nE                      Rollatorf\u00e4hig \nE                   \nE       \nE                   \nE                     \nE                      Rollstuhlf\u00e4hig \nE                   \nE       \nE                   \nE                     \nE                      Bettl\u00e4gerig \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE       \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE                 \nE                   Wie mobil ist die zu pflegende Person?    Person 2 Mobilit\u00e4t\nE                 \nE       \nE                   \nE                     \nE                      Mobil \nE                   \nE       \nE                   \nE                     \nE                      Rollatorf\u00e4hig \nE                   \nE       \nE                   \nE                     \nE                      Rollstuhlf\u00e4hig \nE                   \nE       \nE                   \nE                     \nE                      Bettl\u00e4gerig \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE       \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE               \nE                 \nE                   Sind Nachteins\u00e4tze n\u00f6tig?    Person 1 Nachteinsatz \nE                 \nE       \nE                   \nE                     \nE                      Keine \nE                   \nE       \nE                   \nE                     \nE                      Max. 1x/Nacht \nE                   \nE       \nE                   \nE                     \nE                      Max. 2x/Nacht \nE                   \nE       \nE                   \nE                     \nE                      H\u00e4ufiger \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE                 \nE                   Sind Nachteins\u00e4tze n\u00f6tig?   Person 2 Nachteinsatz \nE                 \nE       \nE                   \nE                     \nE                      Keine \nE                   \nE       \nE                   \nE                     \nE                      Max. 1x/Nacht \nE                   \nE       \nE                   \nE                     \nE                      Max. 2x/Nacht \nE                   \nE       \nE                   \nE                     \nE                      H\u00e4ufiger \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE               \nE               \nE                 \nE                   Muss die Pflegekraft Auto fahren? \nE                 \nE       \nE                   \nE                     \nE                      Nein \nE                   \nE       \nE                   \nE                     \nE                      Ja \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE               \nE               \nE                 \nE                   Welche Deutschkenntnisse w\u00fcnschen Sie? \nE                 \nE       \nE                   \nE                     \nE                      Grundkenntnisse \nE                   \nE       \nE                   \nE                     \nE                     Mittelstufe (empfohlen)\nE                   \nE       \nE                   \nE                     \nE                      Fortgeschritten \nE                   \nE       \nE                   \nE                     \nE                      Gute Kenntnisse \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE                 \nE                   \nE                     Mit Grundkenntnissen beherrscht die Betreuungskraft einzelne deutsche W\u00f6rter und kann einfache S\u00e4tze verstehen.\nE                     Mittlere Sprachkenntnisse erm\u00f6glichen eine Kommunikation in einzelnen einfachen S\u00e4tzen auf grundlegendem Niveau.\nE                     Bei fortgeschrittenen Sprachkenntnissen beherrscht die Betreuungskraft Alltagskommunikation und es ist eine einfache Konversation m\u00f6glich.\nE                     Flie\u00dfende Sprachkenntnisse erm\u00f6glichen auch Gespr\u00e4che und Kommunikation \u00fcber Alltagsthemen hinaus.\nE                   \nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE               \nE               \nE                 \nE                   W\u00fcnschen Sie eine weibliche oder m\u00e4nnliche Pflegehilfe? \nE                 \nE       \nE                   \nE                     \nE                      M\u00e4nnlich \nE                   \nE       \nE                   \nE                     \nE                      Weiblich \nE                   \nE       \nE                   \nE                     \nE                      Unwichtig \nE                   \nE       \nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE               \nE               \nE                 \nE                   Wann wird die Betreuung ben\u00f6tigt? \nE                 \nE       \nE                   \nE                     \nE                      Schnellstm\u00f6glich \nE                   \nE       \nE                   \nE                     \nE                      Noch unklar \nE                   \nE       \nE                   \nE                     \nE                      Zum bestimmten Termin \nE                   \nE       \nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE               \nE               \nE                 \nE                   Wo wird die Betreuung ben\u00f6tigt? \nE                 \nE       \nE                   \nE       \nE                 \nE                 \nE                   Weiter\nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE               \nE               \nE                  Super! Wir haben\nE                   passende Pflegeanbieter in Ihrer Region gefunden \nE                  Wer soll unser Ansprechpartner f\u00fcr die Angebote sein? \nE                 \nE       \nE                   \nE       \nE                   \nE       \nE       \nE                   \nE       \nE       \nE       \nE       \nE                   \nE                     \nE                     \nE                        Ich habe die Datenschutzerkl\u00e4rung und AGB zur Kenntnis genommen und stimme der Verarbeitung meiner personenbezogenen\nE                         Daten zum Erhalt von Informationen zu dem\nE                         gew\u00fcnschten Thema per E-Mail und Telefon zu. (Widerruf jederzeit m\u00f6glich) \nE                   \nE       \nE                 \nE                  Jetzt\nE                   Angebote vergleichen\nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE               \nE       \nE             \nE           \nE         \nE       \nE         \nE         \nE       \nE           \nE             Warum &amp;quot;24-Stunden-Pflegeanbieter&amp;quot; vergleichen?\nE           \nE       \nE           \nE       \nE             \nE               \nE                 \u00dcber 200 Anbieter vergleichen  &amp;amp;\nE                   bis zu  7.200\u20ac sparen \nE               \nE                Wir helfen Ihnen gerne, die besten\nE                 Anbieter der &amp;quot;24-Stunden-Pflege&amp;quot; zu finden und durch unseren Anbietervergleich bis zu 7.200\u20ac im Jahr zu\nE                 sparen. \nE             \nE       \nE             \nE               \nE                  Top 3 Angebote   mit\nE                   nur  einer Anfrage\nE               \nE                Sie m\u00fcssen nicht stundenlang\nE                 recherchieren, Gespr\u00e4che f\u00fchren und lange Formulare ausf\u00fcllen. Wir finden f\u00fcr Sie die 3 besten Angebote. \nE             \nE       \nE             \nE               \nE                 Sicherheit durch  Bewertungen \nE                 \nE               \nE                Die Vielzahl der \u201c24h-Pflege-Anbieter\u201d\nE                 stellt eine Herausforderung dar. Nutzen Sie Bewertungen und Empfehlungen als Entscheidungshilfe. Vergleichen Sie\nE                 mit uns die besten Pflegeanbieter und profitieren Sie von bisher unerreichter Markttransparenz in der\nE                 &amp;quot;24-Stunden-Betreuung&amp;quot;. \nE             \nE       \nE             \nE               \nE                  100% kostenlos  &amp;amp;\nE                   unverbindlich \nE       \nE                  100% Kostenlos   und\nE                   unverbindlich \nE               \nE               Nutzen Sie unseren kostenfreien und\nE                 unverbindlichen Service, um bis zu drei Angebote zu erhalten. Entscheiden Sie selbst, welcher Anbieter am besten\nE                 zu Ihren Bed\u00fcrfnissen passt, und erhalten Sie so einen optimalen Vergleich. \nE             \nE       \nE       \nE           \nE       \nE         \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE           In nur 4 einfachen\nE             Schritten zum  besten Angebot\nE       \nE           Nachdem wir Ihre Anfrage erhalten haben, beginnen wir sofort und kostenfrei mit einer Bedarfsanalyse und finden f\u00fcr Sie den Pflegeanbieter mit dem besten Preis-Leistungs-Verh\u00e4ltnis.\nE       \nE           \nE       \nE             \nE       \nE               \nE       \nE                 1\nE       \nE                 \nE                   \nE                 \nE       \nE                 Ihre Anfrage\nE       \nE                 Sie beschreiben uns Ihre W\u00fcnsche und Bed\u00fcrfnisse und Schildern uns die Situation, damit wir uns auf das pers\u00f6nliche Gespr\u00e4ch mit Ihnen vorbereiten k\u00f6nnen.\nE       \nE               \nE       \nE               \nE       \nE                 2\nE       \nE                 \nE                   \nE                 \nE       \nE                 Kostenfreie Bedarfsanalyse\nE       \nE                 Einer unserer Pflegeberater ruft Sie mit der Rufnummer 040 - 180 240 914 an, um weitere offene Fragen zu besprechen.\nE       \nE               \nE       \nE               \nE       \nE                 3\nE       \nE                 \nE       \nE                 Passende\nE                   Anbieter finden\nE       \nE                 Entsprechend Ihren W\u00fcnschen suchen wir f\u00fcr Sie die besten Preis-Leistungs-Pflegeanbieter und bitten diese, Ihnen unverbindliche Angebote zu unterbreiten.\nE       \nE               \nE       \nE               \nE       \nE                 4\nE       \nE                 \nE       \nE                 Angebote vergleichen\nE       \nE                 Nun haben Sie die besten Angebote vorliegen und k\u00f6nnen konkret pr\u00fcfen, ob bzw. f\u00fcr welches Angebot Sie sich entscheiden m\u00f6chten.\nE       \nE               \nE       \nE             \nE       \nE           \nE         \nE       \nE       \nE       \nE       \nE         \nE         \nE            Aktuelle \nE             Kundenmeinungen \nE           \nE                     \nE                     \nE                     \nE                     \nE                     \nE                 \nE         \nE         \nE           \nE           \nE             \nE             \nE               \nE                         \nE                   \nE                      &amp;quot;Danke! Wir haben durch Ihren Service viel Zeit gespart und eine super Pflegerin f\u00fcr unsere Mama gefunden!&amp;quot; \nE                     \nE                       \nE                        Stefanie S., Bremen\nE                     \nE                   \nE                 \nE                         \nE                   \nE                      &amp;quot;Wir haben leider schon viele Erfahrungen mit verschiedenen Anbietern machen m\u00fcssen. Jetzt sind wir froh, dass wir nicht mehr hilflos einer Agentur ausgeliefert sind.&amp;quot; \nE                     \nE                       \nE                        Sarah &amp;amp; Mama Christina, Stuttgart\nE                     \nE                   \nE                 \nE                         \nE                   \nE                      &amp;quot;Danke! Monika k\u00fcmmert sich sehr gut um unsere Oma. Zu wissen, dass sie gut versorgt ist, gibt uns wieder ein bisschen Ruhe. \nE                     \nE                       \nE                        Anton &amp;amp; Pia-Maria, Hamburg\nE                     \nE                   \nE                 \nE                         \nE                   \nE                      &amp;quot;Endlich haben wir als Familie kein schlechtes Gewissen mehr. Nun ist Marta f\u00fcr unsere Mama da.&amp;quot; \nE                     \nE                       \nE                        Christian &amp;amp; Maria, L\u00fcneburg\nE                     \nE                   \nE                 \nE                     \nE           \nE       \nE         \nE       \nE         \nE           \nE           \nE         \nE       \nE         \nE           \nE             \nE               Fragen und Antworten \nE             \nE                         \nE                   \nE                      Was versteht man unter &amp;quot;24-Stunden-Pflege&amp;quot;? \nE                     \nE                       \nE                     \nE                   \nE                     Die \u201e24-Stunden-Pflege\u201c bietet eine Alternative zum Pflegeheim f\u00fcr Menschen, die auf intensive Betreuung angewiesen sind, jedoch ihre vertraute Umgebung nicht verlassen m\u00f6chten. Innerhalb dieses Betreuungsmodells lebt die unterst\u00fctzende Kraft, \u00fcblicherweise ohne eine formale Pflegeausbildung, gemeinsam mit der pflegebed\u00fcrftigen Person. Obwohl sie keine medizinische Versorgung wie die Behandlung von Wunden durchf\u00fchren, engagieren sie sich aktiv in der t\u00e4glichen Grundpflege und helfen bei allt\u00e4glichen Aufgaben im Haushalt.\nE         \nE                 \nE                         \nE                   \nE                      Welche Leistungen sind in der &amp;quot;24-Stunden-Pflege&amp;quot; enthalten? \nE                     \nE                       \nE                     \nE                   \nE                     Die Betreuungskr\u00e4fte der \u201e24-Stunden-Pflege\u201c unterst\u00fctzen Pflegebed\u00fcrftige umfassend in der Grundpflege. Hierzu geh\u00f6ren essenzielle T\u00e4tigkeiten wie K\u00f6rperpflege, Ankleiden, Mund- und Zahnpflege sowie Hilfe bei Toiletteng\u00e4ngen und Mahlzeitenzubereitung. Es ist wichtig zu betonen, dass die 24-Stunden-Pflegekraft keine medizinischen Aufgaben \u00fcbernimmt, wie beispielsweise das Messen des Blutdrucks.\nE       Dar\u00fcber hinaus \u00fcbernimmt die Pflegeperson auch Haushaltst\u00e4tigkeiten wie Einkaufen, Kochen und Reinigen. Abh\u00e4ngig vom Gesundheitszustand des Pflegebed\u00fcrftigen begleitet die 24-Stunden-Kraft diesen zu Terminen, unterst\u00fctzt bei Spazierg\u00e4ngen und f\u00f6rdert aktivierende Pflegeaktivit\u00e4ten.\nE         \nE                 \nE                         \nE                   \nE                      Wie schnell erhalte ich eine &amp;quot;24-Stunden-Pflegekraft&amp;quot;? \nE                     \nE                       \nE                     \nE                   \nE                     Die zeitnahe Vermittlung einer geeigneten \u201e24-Stunden-Pflege\u201c h\u00e4ngt von verschiedenen Faktoren ab, darunter die Effizienz der Vermittlungsagentur sowie die aktuelle Verf\u00fcgbarkeit und Nachfrage. Vermittlungsagenturen streben in der Regel an, rasch eine passende Betreuungskraft zu finden. Es ist empfehlenswert, in Ihrem Antrag die Dringlichkeit zu betonen und genau anzugeben, ab welchem Zeitpunkt Sie die Betreuung ben\u00f6tigen. Diese klare Kommunikation erleichtert es der Agentur, Ihren zeitlichen Anforderungen gerecht zu werden und z\u00fcgig nach einer optimalen L\u00f6sung zu suchen.\nE         \nE                 \nE                         \nE                   \nE                      Welche Anforderungen gelten f\u00fcr eine &amp;quot;24-Stunden-Pflegekraft&amp;quot;? \nE                     \nE                       \nE                     \nE                   \nE                     Die im Haushalt des Pflegebed\u00fcrftigen lebende \u201e24-Stunden-Pflegekraf\u201ct ben\u00f6tigt angemessene Unterkunft, inklusive eines eigenen Zimmers, sowie Zugang zu Internet und Telefon, um gegebenenfalls den Kontakt zu ihrer Familie aufrechterhalten zu k\u00f6nnen. Zudem steht der Pflegeperson das Recht zu, an den Mahlzeiten teilzunehmen.\nE         \nE                 \nE                         \nE                   \nE                      Welche Aufgaben umfassen die T\u00e4tigkeit einer &amp;quot;24-Stunden-Pflegekraft&amp;quot;? \nE                     \nE                       \nE                     \nE                   \nE                     In der Regel verf\u00fcgt eine \u201e24-Stunden-Pflegekraft\u201c nicht \u00fcber eine formale Pflegeausbildung und erbringt dementsprechend keine medizinischen Leistungen wie die Versorgung von Wunden. Ihre Hauptaufgaben liegen in der t\u00e4glichen Grundpflege und der Unterst\u00fctzung bei Haushaltsaufgaben.\nE       \u00a0\nE       Es ist wichtig zu betonen, dass die Arbeitszeiten einer \u201e24-Stunden-Pflegekraft\u201c nicht ununterbrochen 24 Stunden am Tag betragen und sie nicht dauerhaft in Rufbereitschaft stehen. Ihr Arbeitsverh\u00e4ltnis unterliegt dem deutschen Arbeitsrecht, einschlie\u00dflich der Einhaltung gesetzlicher Pausenzeiten.\nE         \nE                 \nE                         \nE                   \nE                      Wie viele Stunden darf eine Betreuungskraft in der &amp;quot;24-Stunden-Pflege&amp;quot; arbeiten? \nE                     \nE                       \nE                     \nE                   \nE                     Die gesetzlich zul\u00e4ssige maximale Wochenarbeitszeit f\u00fcr Angestellte betr\u00e4gt in Deutschland in der Regel etwa 60 Stunden pro Woche. Der Ausdruck \u201e24-Stunden-Betreuung\u201c oder \u201e24-Stunden-Pflege\u201c symbolisiert haupts\u00e4chlich den Umfang der Betreuung, w\u00e4hrend der treffende Begriff \u201eBetreuung in h\u00e4uslicher Gemeinschaft\u201c (BihG) bisher noch nicht weit verbreitet ist.\nE         \nE                 \nE                     \nE           \nE         \nE       \nE       \nE         \nE         \nE         \nE         \nE         \nE       \nE           \nE           \nE           \nE       \nE         \nE       \nE         \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE         \nE           \nE                                                           Jetzt Pflegeanbieter finden\nE                           \nE                     Pflegebund.eu\nE                     Westerm\u00f6\u00f6ler Weg 2a\nE                     25591 Ottenb\u00fcttel\nE                   \nE                         \nE                   \nE                     \nE                   \nE                 \nE                         \nE                   \nE                     \nE                   \nE                 \nE                         \nE                   \nE                     \nE                   \nE                 \nE                     \nE           \nE           \nE                     \nE                         \nE                   Kontakt\nE                   Sie erreichen uns von Mo. bis Fr. zwischen 9:00 Uhr &amp;amp; 19:00 Uhr.\nE                   info@pflegebund.eu\nE                   +49 40 180240914\nE                 \nE               \nE                               \nE                   Service\nE                                 Partner werden\nE                                 Impressum\nE                                 Datenschutzrichtlinien\nE                                 Cookie Richtlinien\nE                             \nE               \nE               \nE                     \nE               \nE                 \nE       \nE           \nE             \nE           \nE             \nE           \nE                     \nE                 Jetzt Pflegeanbieter finden\nE               \nE             \nE           \nE         \nE       \nE         \nE       \nE         \nE           \nE             \u201c24-Stunden-Pflege\u201d in Ihrer Region\nE           \nE       \nE           \nE                           &amp;quot;24-Stunden-Pflege\u201d in Th\u00fcringen \nE                     &amp;quot;24-Stunden-Pflege\u201d in Schleswig-Holstein \nE                     &amp;quot;24-Stunden-Pflege\u201d in Sachsen-Anhalt \nE                     &amp;quot;24-Stunden-Pflege\u201d in Sachsen \nE                     &amp;quot;24-Stunden-Pflege\u201d in Saarland \nE                     &amp;quot;24-Stunden-Pflege\u201d in Rheinland-Pfalz \nE                     &amp;quot;24-Stunden-Pflege\u201d in Nordrhein-Westfalen \nE                     &amp;quot;24-Stunden-Pflege\u201d in Niedersachsen \nE                     &amp;quot;24-Stunden-Pflege\u201d in Hessen \nE                     &amp;quot;24-Stunden-Pflege\u201d in Brandenburg \nE                     &amp;quot;24-Stunden-Pflege\u201d in Bayern \nE                     &amp;quot;24-Stunden-Pflege\u201d in Baden-W\u00fcrttemberg \nE                     &amp;quot;24-Stunden-Pflege\u201d in Berlin \nE                     &amp;quot;24-Stunden-Pflege\u201d in Bremen \nE                     &amp;quot;24-Stunden-Pflege\u201d in Hamburg \nE                     &amp;quot;24-Stunden-Pflege\u201d in Mecklenburg-Vorpommern \nE                 \nE           \nE       \nE           \nE         \nE       \nE       \nE       \nE       \nE           \nE       \nE                 \nE       \nE        \nE       Call log:\nE         - LocatorAssertions.to_contain_text with timeout 5000ms\nE         -   - waiting for locator(&amp;quot;body&amp;quot;)\nE         -     7 \u00d7 locator resolved to &amp;lt;body class=&amp;quot;page-template page-template-singup page page-id-124 wp-embed-responsive angebote-vergleichen scroll-down&amp;quot;&amp;gt;\u2026&amp;lt;/body&amp;gt;\nE         -       - unexpected value &amp;quot;\nE           \t\t\nE       \t\t\nE       \t\t\nE       \t    \nE           \nE             \nE       \nE       \nE         \nE           \nE             \nE               \nE                 \nE               \nE       \nE               \nE                 \nE                 \nE                   Brauchen Sie Hilfe?\nE                   Ilka Wysocki\nE                   \nE                     \nE                     \nE                       040 - 180 240 916\nE                                   \nE                   \nE                 \nE                 \nE                   \nE                   \nE                     040 - 180 240 916\nE                   \nE                 \nE       \nE               \nE       \nE       \nE             \nE           \nE         \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE         \nE           \nE         \nE       \nE         \nE           \nE             \nE           \nE         \nE       \nE       \nE           \nE             \nE               \nE                 \nE                   \nE                 \nE                  Mit uns finden Sie die besten Anbieter der \u201c24-Stunden-Pflege\u201d\nE                 \nE               \nE       \nE               \nE       \nE               \nE               \nE       \nE               \nE                 \nE                   Wie viele Personen sind zu betreuen?  \nE                 \nE       \nE                   \nE                     \nE                      1 Person \nE                   \nE       \nE                   \nE                     \nE                      2 Personen \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE       \nE               \nE       \nE       \nE               \nE               \nE                 \nE                   Befindet sich eine zus\u00e4tzliche Person (ohne Pflegebedarf) mit im Haushalt? \nE                 \nE       \nE                   \nE                     \nE                      Nein \nE                   \nE       \nE                   \nE                     \nE                      Ja \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE                 \nE                   Wie mobil ist die zu pflegende Person?    Person 1 Mobilit\u00e4t\nE                 \nE       \nE                   \nE                     \nE                      Mobil \nE                   \nE       \nE                   \nE                     \nE                      Rollatorf\u00e4hig \nE                   \nE       \nE                   \nE                     \nE                      Rollstuhlf\u00e4hig \nE                   \nE       \nE                   \nE                     \nE                      Bettl\u00e4gerig \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE       \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE                 \nE                   Wie mobil ist die zu pflegende Person?    Person 2 Mobilit\u00e4t\nE                 \nE       \nE                   \nE                     \nE                      Mobil \nE                   \nE       \nE                   \nE                     \nE                      Rollatorf\u00e4hig \nE                   \nE       \nE                   \nE                     \nE                      Rollstuhlf\u00e4hig \nE                   \nE       \nE                   \nE                     \nE                      Bettl\u00e4gerig \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE       \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE               \nE                 \nE                   Sind Nachteins\u00e4tze n\u00f6tig?    Person 1 Nachteinsatz \nE                 \nE       \nE                   \nE                     \nE                      Keine \nE                   \nE       \nE                   \nE                     \nE                      Max. 1x/Nacht \nE                   \nE       \nE                   \nE                     \nE                      Max. 2x/Nacht \nE                   \nE       \nE                   \nE                     \nE                      H\u00e4ufiger \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE                 \nE                   Sind Nachteins\u00e4tze n\u00f6tig?   Person 2 Nachteinsatz \nE                 \nE       \nE                   \nE                     \nE                      Keine \nE                   \nE       \nE                   \nE                     \nE                      Max. 1x/Nacht \nE                   \nE       \nE                   \nE                     \nE                      Max. 2x/Nacht \nE                   \nE       \nE                   \nE                     \nE                      H\u00e4ufiger \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE               \nE               \nE                 \nE                   Muss die Pflegekraft Auto fahren? \nE                 \nE       \nE                   \nE                     \nE                      Nein \nE                   \nE       \nE                   \nE                     \nE                      Ja \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE               \nE               \nE                 \nE                   Welche Deutschkenntnisse w\u00fcnschen Sie? \nE                 \nE       \nE                   \nE                     \nE                      Grundkenntnisse \nE                   \nE       \nE                   \nE                     \nE                     Mittelstufe (empfohlen)\nE                   \nE       \nE                   \nE                     \nE                      Fortgeschritten \nE                   \nE       \nE                   \nE                     \nE                      Gute Kenntnisse \nE                   \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE                 \nE                 \nE                   \nE                     Mit Grundkenntnissen beherrscht die Betreuungskraft einzelne deutsche W\u00f6rter und kann einfache S\u00e4tze verstehen.\nE                     Mittlere Sprachkenntnisse erm\u00f6glichen eine Kommunikation in einzelnen einfachen S\u00e4tzen auf grundlegendem Niveau.\nE                     Bei fortgeschrittenen Sprachkenntnissen beherrscht die Betreuungskraft Alltagskommunikation und es ist eine einfache Konversation m\u00f6glich.\nE                     Flie\u00dfende Sprachkenntnisse erm\u00f6glichen auch Gespr\u00e4che und Kommunikation \u00fcber Alltagsthemen hinaus.\nE                   \nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE               \nE               \nE                 \nE                   W\u00fcnschen Sie eine weibliche oder m\u00e4nnliche Pflegehilfe? \nE                 \nE       \nE                   \nE                     \nE                      M\u00e4nnlich \nE                   \nE       \nE                   \nE                     \nE                      Weiblich \nE                   \nE       \nE                   \nE                     \nE                      Unwichtig \nE                   \nE       \nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE               \nE               \nE                 \nE                   Wann wird die Betreuung ben\u00f6tigt? \nE                 \nE       \nE                   \nE                     \nE                      Schnellstm\u00f6glich \nE                   \nE       \nE                   \nE                     \nE                      Noch unklar \nE                   \nE       \nE                   \nE                     \nE                      Zum bestimmten Termin \nE                   \nE       \nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE               \nE               \nE                 \nE                   Wo wird die Betreuung ben\u00f6tigt? \nE                 \nE       \nE                   \nE       \nE                 \nE                 \nE                   Weiter\nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE       \nE               \nE               \nE               \nE               \nE                  Super! Wir haben\nE                   passende Pflegeanbieter in Ihrer Region gefunden \nE                  Wer soll unser Ansprechpartner f\u00fcr die Angebote sein? \nE                 \nE       \nE                   \nE       \nE                   \nE       \nE       \nE                   \nE       \nE       \nE       \nE       \nE                   \nE                     \nE                     \nE                        Ich habe die Datenschutzerkl\u00e4rung und AGB zur Kenntnis genommen und stimme der Verarbeitung meiner personenbezogenen\nE                         Daten zum Erhalt von Informationen zu dem\nE                         gew\u00fcnschten Thema per E-Mail und Telefon zu. (Widerruf jederzeit m\u00f6glich) \nE                   \nE       \nE                 \nE                  Jetzt\nE                   Angebote vergleichen\nE                 \nE                 \nE                   \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                     \nE                   \nE                 \nE                 \nE               \nE       \nE               \nE       \nE             \nE           \nE         \nE       \nE         \nE         \nE       \nE           \nE             Warum &amp;quot;24-Stunden-Pflegeanbieter&amp;quot; vergleichen?\nE           \nE       \nE           \nE       \nE             \nE               \nE                 \u00dcber 200 Anbieter vergleichen  &amp;amp;\nE                   bis zu  7.200\u20ac sparen \nE               \nE                Wir helfen Ihnen gerne, die besten\nE                 Anbieter der &amp;quot;24-Stunden-Pflege&amp;quot; zu finden und durch unseren Anbietervergleich bis zu 7.200\u20ac im Jahr zu\nE                 sparen. \nE             \nE       \nE             \nE               \nE                  Top 3 Angebote   mit\nE                   nur  einer Anfrage\nE               \nE                Sie m\u00fcssen nicht stundenlang\nE                 recherchieren, Gespr\u00e4che f\u00fchren und lange Formulare ausf\u00fcllen. Wir finden f\u00fcr Sie die 3 besten Angebote. \nE             \nE       \nE             \nE               \nE                 Sicherheit durch  Bewertungen \nE                 \nE               \nE                Die Vielzahl der \u201c24h-Pflege-Anbieter\u201d\nE                 stellt eine Herausforderung dar. Nutzen Sie Bewertungen und Empfehlungen als Entscheidungshilfe. Vergleichen Sie\nE                 mit uns die besten Pflegeanbieter und profitieren Sie von bisher unerreichter Markttransparenz in der\nE                 &amp;quot;24-Stunden-Betreuung&amp;quot;. \nE             \nE       \nE             \nE               \nE                  100% kostenlos  &amp;amp;\nE                   unverbindlich \nE       \nE                  100% Kostenlos   und\nE                   unverbindlich \nE               \nE               Nutzen Sie unseren kostenfreien und\nE                 unverbindlichen Service, um bis zu drei Angebote zu erhalten. Entscheiden Sie selbst, welcher Anbieter am besten\nE                 zu Ihren Bed\u00fcrfnissen passt, und erhalten Sie so einen optimalen Vergleich. \nE             \nE       \nE       \nE           \nE       \nE         \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE           In nur 4 einfachen\nE             Schritten zum  besten Angebot\nE       \nE           Nachdem wir Ihre Anfrage erhalten haben, beginnen wir sofort und kostenfrei mit einer Bedarfsanalyse und finden f\u00fcr Sie den Pflegeanbieter mit dem besten Preis-Leistungs-Verh\u00e4ltnis.\nE       \nE           \nE       \nE             \nE       \nE               \nE       \nE                 1\nE       \nE                 \nE                   \nE                 \nE       \nE                 Ihre Anfrage\nE       \nE                 Sie beschreiben uns Ihre W\u00fcnsche und Bed\u00fcrfnisse und Schildern uns die Situation, damit wir uns auf das pers\u00f6nliche Gespr\u00e4ch mit Ihnen vorbereiten k\u00f6nnen.\nE       \nE               \nE       \nE               \nE       \nE                 2\nE       \nE                 \nE                   \nE                 \nE       \nE                 Kostenfreie Bedarfsanalyse\nE       \nE                 Einer unserer Pflegeberater ruft Sie mit der Rufnummer 040 - 180 240 914 an, um weitere offene Fragen zu besprechen.\nE       \nE               \nE       \nE               \nE       \nE                 3\nE       \nE                 \nE       \nE                 Passende\nE                   Anbieter finden\nE       \nE                 Entsprechend Ihren W\u00fcnschen suchen wir f\u00fcr Sie die besten Preis-Leistungs-Pflegeanbieter und bitten diese, Ihnen unverbindliche Angebote zu unterbreiten.\nE       \nE               \nE       \nE               \nE       \nE                 4\nE       \nE                 \nE       \nE                 Angebote vergleichen\nE       \nE                 Nun haben Sie die besten Angebote vorliegen und k\u00f6nnen konkret pr\u00fcfen, ob bzw. f\u00fcr welches Angebot Sie sich entscheiden m\u00f6chten.\nE       \nE               \nE       \nE             \nE       \nE           \nE         \nE       \nE       \nE       \nE       \nE         \nE         \nE            Aktuelle \nE             Kundenmeinungen \nE           \nE                     \nE                     \nE                     \nE                     \nE                     \nE                 \nE         \nE         \nE           \nE           \nE             \nE             \nE               \nE                         \nE                   \nE                      &amp;quot;Danke! Wir haben durch Ihren Service viel Zeit gespart und eine super Pflegerin f\u00fcr unsere Mama gefunden!&amp;quot; \nE                     \nE                       \nE                        Stefanie S., Bremen\nE                     \nE                   \nE                 \nE                         \nE                   \nE                      &amp;quot;Wir haben leider schon viele Erfahrungen mit verschiedenen Anbietern machen m\u00fcssen. Jetzt sind wir froh, dass wir nicht mehr hilflos einer Agentur ausgeliefert sind.&amp;quot; \nE                     \nE                       \nE                        Sarah &amp;amp; Mama Christina, Stuttgart\nE                     \nE                   \nE                 \nE                         \nE                   \nE                      &amp;quot;Danke! Monika k\u00fcmmert sich sehr gut um unsere Oma. Zu wissen, dass sie gut versorgt ist, gibt uns wieder ein bisschen Ruhe. \nE                     \nE                       \nE                        Anton &amp;amp; Pia-Maria, Hamburg\nE                     \nE                   \nE                 \nE                         \nE                   \nE                      &amp;quot;Endlich haben wir als Familie kein schlechtes Gewissen mehr. Nun ist Marta f\u00fcr unsere Mama da.&amp;quot; \nE                     \nE                       \nE                        Christian &amp;amp; Maria, L\u00fcneburg\nE                     \nE                   \nE                 \nE                     \nE           \nE       \nE         \nE       \nE         \nE           \nE           \nE         \nE       \nE         \nE           \nE             \nE               Fragen und Antworten \nE             \nE                         \nE                   \nE                      Was versteht man unter &amp;quot;24-Stunden-Pflege&amp;quot;? \nE                     \nE                       \nE                     \nE                   \nE                     Die \u201e24-Stunden-Pflege\u201c bietet eine Alternative zum Pflegeheim f\u00fcr Menschen, die auf intensive Betreuung angewiesen sind, jedoch ihre vertraute Umgebung nicht verlassen m\u00f6chten. Innerhalb dieses Betreuungsmodells lebt die unterst\u00fctzende Kraft, \u00fcblicherweise ohne eine formale Pflegeausbildung, gemeinsam mit der pflegebed\u00fcrftigen Person. Obwohl sie keine medizinische Versorgung wie die Behandlung von Wunden durchf\u00fchren, engagieren sie sich aktiv in der t\u00e4glichen Grundpflege und helfen bei allt\u00e4glichen Aufgaben im Haushalt.\nE         \nE                 \nE                         \nE                   \nE                      Welche Leistungen sind in der &amp;quot;24-Stunden-Pflege&amp;quot; enthalten? \nE                     \nE                       \nE                     \nE                   \nE                     Die Betreuungskr\u00e4fte der \u201e24-Stunden-Pflege\u201c unterst\u00fctzen Pflegebed\u00fcrftige umfassend in der Grundpflege. Hierzu geh\u00f6ren essenzielle T\u00e4tigkeiten wie K\u00f6rperpflege, Ankleiden, Mund- und Zahnpflege sowie Hilfe bei Toiletteng\u00e4ngen und Mahlzeitenzubereitung. Es ist wichtig zu betonen, dass die 24-Stunden-Pflegekraft keine medizinischen Aufgaben \u00fcbernimmt, wie beispielsweise das Messen des Blutdrucks.\nE       Dar\u00fcber hinaus \u00fcbernimmt die Pflegeperson auch Haushaltst\u00e4tigkeiten wie Einkaufen, Kochen und Reinigen. Abh\u00e4ngig vom Gesundheitszustand des Pflegebed\u00fcrftigen begleitet die 24-Stunden-Kraft diesen zu Terminen, unterst\u00fctzt bei Spazierg\u00e4ngen und f\u00f6rdert aktivierende Pflegeaktivit\u00e4ten.\nE         \nE                 \nE                         \nE                   \nE                      Wie schnell erhalte ich eine &amp;quot;24-Stunden-Pflegekraft&amp;quot;? \nE                     \nE                       \nE                     \nE                   \nE                     Die zeitnahe Vermittlung einer geeigneten \u201e24-Stunden-Pflege\u201c h\u00e4ngt von verschiedenen Faktoren ab, darunter die Effizienz der Vermittlungsagentur sowie die aktuelle Verf\u00fcgbarkeit und Nachfrage. Vermittlungsagenturen streben in der Regel an, rasch eine passende Betreuungskraft zu finden. Es ist empfehlenswert, in Ihrem Antrag die Dringlichkeit zu betonen und genau anzugeben, ab welchem Zeitpunkt Sie die Betreuung ben\u00f6tigen. Diese klare Kommunikation erleichtert es der Agentur, Ihren zeitlichen Anforderungen gerecht zu werden und z\u00fcgig nach einer optimalen L\u00f6sung zu suchen.\nE         \nE                 \nE                         \nE                   \nE                      Welche Anforderungen gelten f\u00fcr eine &amp;quot;24-Stunden-Pflegekraft&amp;quot;? \nE                     \nE                       \nE                     \nE                   \nE                     Die im Haushalt des Pflegebed\u00fcrftigen lebende \u201e24-Stunden-Pflegekraf\u201ct ben\u00f6tigt angemessene Unterkunft, inklusive eines eigenen Zimmers, sowie Zugang zu Internet und Telefon, um gegebenenfalls den Kontakt zu ihrer Familie aufrechterhalten zu k\u00f6nnen. Zudem steht der Pflegeperson das Recht zu, an den Mahlzeiten teilzunehmen.\nE         \nE                 \nE                         \nE                   \nE                      Welche Aufgaben umfassen die T\u00e4tigkeit einer &amp;quot;24-Stunden-Pflegekraft&amp;quot;? \nE                     \nE                       \nE                     \nE                   \nE                     In der Regel verf\u00fcgt eine \u201e24-Stunden-Pflegekraft\u201c nicht \u00fcber eine formale Pflegeausbildung und erbringt dementsprechend keine medizinischen Leistungen wie die Versorgung von Wunden. Ihre Hauptaufgaben liegen in der t\u00e4glichen Grundpflege und der Unterst\u00fctzung bei Haushaltsaufgaben.\nE       \u00a0\nE       Es ist wichtig zu betonen, dass die Arbeitszeiten einer \u201e24-Stunden-Pflegekraft\u201c nicht ununterbrochen 24 Stunden am Tag betragen und sie nicht dauerhaft in Rufbereitschaft stehen. Ihr Arbeitsverh\u00e4ltnis unterliegt dem deutschen Arbeitsrecht, einschlie\u00dflich der Einhaltung gesetzlicher Pausenzeiten.\nE         \nE                 \nE                         \nE                   \nE                      Wie viele Stunden darf eine Betreuungskraft in der &amp;quot;24-Stunden-Pflege&amp;quot; arbeiten? \nE                     \nE                       \nE                     \nE                   \nE                     Die gesetzlich zul\u00e4ssige maximale Wochenarbeitszeit f\u00fcr Angestellte betr\u00e4gt in Deutschland in der Regel etwa 60 Stunden pro Woche. Der Ausdruck \u201e24-Stunden-Betreuung\u201c oder \u201e24-Stunden-Pflege\u201c symbolisiert haupts\u00e4chlich den Umfang der Betreuung, w\u00e4hrend der treffende Begriff \u201eBetreuung in h\u00e4uslicher Gemeinschaft\u201c (BihG) bisher noch nicht weit verbreitet ist.\nE         \nE                 \nE                     \nE           \nE         \nE       \nE       \nE         \nE         \nE         \nE         \nE         \nE       \nE           \nE           \nE           \nE       \nE         \nE       \nE         \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE       \nE         \nE           \nE                                                           Jetzt Pflegeanbieter finden\nE                           \nE                     Pflegebund.eu\nE                     Westerm\u00f6\u00f6ler Weg 2a\nE                     25591 Ottenb\u00fcttel\nE                   \nE                         \nE                   \nE                     \nE                   \nE                 \nE                         \nE                   \nE                     \nE                   \nE                 \nE                         \nE                   \nE                     \nE                   \nE                 \nE                     \nE           \nE           \nE                     \nE                         \nE                   Kontakt\nE                   Sie erreichen uns von Mo. bis Fr. zwischen 9:00 Uhr &amp;amp; 19:00 Uhr.\nE                   info@pflegebund.eu\nE                   +49 40 180240914\nE                 \nE               \nE                               \nE                   Service\nE                                 Partner werden\nE                                 Impressum\nE                                 Datenschutzrichtlinien\nE                                 Cookie Richtlinien\nE                             \nE               \nE               \nE                     \nE               \nE                 \nE       \nE           \nE             \nE           \nE             \nE           \nE                     \nE                 Jetzt Pflegeanbieter finden\nE               \nE             \nE           \nE         \nE       \nE         \nE       \nE         \nE           \nE             \u201c24-Stunden-Pflege\u201d in Ihrer Region\nE           \nE       \nE           \nE                           &amp;quot;24-Stunden-Pflege\u201d in Th\u00fcringen \nE                     &amp;quot;24-Stunden-Pflege\u201d in Schleswig-Holstein \nE                     &amp;quot;24-Stunden-Pflege\u201d in Sachsen-Anhalt \nE                     &amp;quot;24-Stunden-Pflege\u201d in Sachsen \nE                     &amp;quot;24-Stunden-Pflege\u201d in Saarland \nE                     &amp;quot;24-Stunden-Pflege\u201d in Rheinland-Pfalz \nE                     &amp;quot;24-Stunden-Pflege\u201d in Nordrhein-Westfalen \nE                     &amp;quot;24-Stunden-Pflege\u201d in Niedersachsen \nE                     &amp;quot;24-Stunden-Pflege\u201d in Hessen \nE                     &amp;quot;24-Stunden-Pflege\u201d in Brandenburg \nE                     &amp;quot;24-Stunden-Pflege\u201d in Bayern \nE                     &amp;quot;24-Stunden-Pflege\u201d in Baden-W\u00fcrttemberg \nE                     &amp;quot;24-Stunden-Pflege\u201d in Berlin \nE                     &amp;quot;24-Stunden-Pflege\u201d in Bremen \nE                     &amp;quot;24-Stunden-Pflege\u201d in Hamburg \nE                     &amp;quot;24-Stunden-Pflege\u201d in Mecklenburg-Vorpommern \nE                 \nE           \nE       \nE           \nE         \nE       \nE       \nE       \nE       \nE           \nE       \nE                 \nE       \nE       &amp;quot;\nE         -     - waiting for&amp;quot; https://pflegebund.wwwclient.pl/vielen-dank/&amp;quot; navigation to finish...\n\npageObjects\\compareOffer.py:78: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nBefindet sich eine zus\u00c3\u00a4tzliche Person (ohne Pflegebedarf) mit im Haushalt?\n&#34;}], &#34;test_compareOffer.py::test_compareOffer[e2e_data1]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_compareOffer.py::test_compareOffer[e2e_data1]&#34;, &#34;duration&#34;: &#34;00:00:43&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_compareOffer.py::test_compareOffer[e2e_data1]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:43&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nBefindet sich eine zus\u00c3\u00a4tzliche Person (ohne Pflegebedarf) mit im Haushalt?\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
